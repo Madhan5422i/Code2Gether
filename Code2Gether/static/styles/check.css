@@ -1,0 +1,25 @@
+#profile_pic-clear_id {
+    display: none;
+}
+
+#profile_pic-clear_id + label {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#profile_pic-clear_id + label:before {
+    content: "";
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border: 2px solid #f6f4f4;
+    border-radius: 50%;
+}
+
+#profile_pic-clear_id:checked + label:before {
+    background-color: #050008;
+}
